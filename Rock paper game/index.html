@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Player Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="home-screen" class="screen">
+        <h1>Welcome to Rock Paper Scissors</h1>
+        <input type="text" id="player1-name" placeholder="Enter Player 1 name">
+        <input type="text" id="player2-name" placeholder="Enter Player 2 name">
+        <button id="start-game">Start Game</button>
+    </div>
+
+    <div id="game-screen" class="screen" style="display: none;">
+        <h2 id="greeting"></h2>
+        <div id="player1-choices" class="choices">
+            <h3 id="player1-greeting"></h3>
+            <img id="rock1" src="document.png" alt="Rock">
+            <img id="paper1" src="fist.png" alt="Paper">
+            <img id="scissors1" src="scissors.png" alt="Scissors">
+        </div>
+        <div id="player2-choices" class="choices">
+            <h3 id="player2-greeting"></h3>
+            <img id="rock2" src="document.png" alt="Rock">
+            <img id="paper2" src="fist.png" alt="Paper">
+            <img id="scissors2" src="scissors.png" alt="Scissors">
+        </div>
+        <p id="message"></p>
+        <button id="restart-game" style="display: none;">Restart Game</button>
+    </div>
+
+    <div id="game-over-screen" class="screen" style="display: none;">
+        <h1>Game Over</h1>
+        <p id="final-message"></p>
+        <button id="play-again">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
